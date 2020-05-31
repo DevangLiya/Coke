@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Do you want coke? [yes,no]" | cowsay -f hellokitty 
+read input
+if [[ ${input,,} = yes ]]; then
+        eject -T
+	echo "Here is your cup holder" | cowsay -f moofasa
+else
+        echo "What a sad human!" | cowsay -f vader
+fi
